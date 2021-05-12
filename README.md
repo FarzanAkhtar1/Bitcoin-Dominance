@@ -15,3 +15,6 @@ By default, the date is in the format dd-mm-yyyy
 To add a timestamp, comment out Line 15, and uncomment Line 16. This will write the date in the format dd-mm-yyyy HH:MM:SS
 
 
+Implementation:
+I execute this code through a once daily cron job at 23:59 to get a value for the day close. This code is suited to different timeframes such as hourly, weekly, and so on.
+Once I have gained sufficient data through daily cron jobs, I use the CSV to calculate moving average values for the dominance which I then use as logic control for other programs. 
